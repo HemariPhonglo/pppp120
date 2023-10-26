@@ -1,0 +1,197 @@
+<html>
+<head>
+  <title>CASE STUDY GOOGLE LENS VS MOBILENET </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="ccclom.png">
+<center>
+  <h3 class="btn btn-primary heading">CASE STUDY GOOGLE LENS VS MOBILENET 
+    <hr>
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+        We are using Mobilenet as a Model  
+        <br>
+          <div class="btn heading_div2">
+           <br> 
+          </div>
+        </div>
+    </center>
+    <br>
+  </h3>
+  <br><br>
+  
+  <p class="btn btn-success result_para_tag">Object : 
+    <span id="result_object_name"></span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-success result_para_tag">Accuracy : 
+    <span id="result_object_accuracy"></span> 
+  </p>
+
+<ol>
+    <div class="test_image_and_result col-xs-12">
+
+        <li class="col-sm-4 col-xs-12">
+            <b>Test Image - </b>
+            <img src="img1.jpeg" class="img-responsive">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">
+            Output on <b>GOOGLE LENS</b>
+            <span>Oxford Advanced Learner Dictionary 9th Edition </span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>MOBILE MODEL</b>
+                <span> book</span>
+                </h5>
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>GOOGLE LENS is more accurate</h4>
+                </div>
+
+                <div class="test_image_and_result col-xs-12">
+
+                  <li class="col-sm-4 col-xs-12">
+                      <b>Test Image - </b>
+                      <img src="img2.jpeg" class="img-responsive">
+                  </li>
+                  <h5 class="col-sm-4 col-xs-12">
+                      Output on <b>GOOGLE LENS</b>
+                      <span>Milton Thermosteel Duo 1000 DLX Bottle </span>
+                      </h5>
+                      <h5 class="col-sm-4 col-xs-12">
+                          Output on <b>MOBILE MODEL</b>
+                          <span> Steel Bottle</span>
+                          </h5>
+                          <div class="mini_result" class="col-xs-12">
+                              <h4>Result - </h4>
+                              <hr>
+                              <h4>GOOGLE LENS is more accurate</h4>
+                          </div>
+                          <div class="test_image_and_result col-xs-12">
+
+                            <li class="col-sm-4 col-xs-12">
+                                <b>Test Image - </b>
+                                <img src="img3.jpeg" class="img-responsive">
+                            </li>
+                            <h5 class="col-sm-4 col-xs-12">
+                                Output on <b>GOOGLE LENS</b>
+                                <span>Decorative box </span>
+                                </h5>
+                                <h5 class="col-sm-4 col-xs-12">
+                                    Output on <b>MOBILE MODEL</b>
+                                    <span> Decorative</span>
+                                    </h5>
+                                    <div class="mini_result" class="col-xs-12">
+                                        <h4>Result - </h4>
+                                        <hr>
+                                        <h4>both are accurate</h4>
+                                    </div>
+                                    <div class="test_image_and_result col-xs-12">
+
+                                      <li class="col-sm-4 col-xs-12">
+                                          <b>Test Image - </b>
+                                          <img src="img4.jpeg" class="img-responsive">
+                                      </li>
+                                      <h5 class="col-sm-4 col-xs-12">
+                                          Output on <b>GOOGLE LENS</b>
+                                          <span>Handblock Print Multicolour Backpack </span>
+                                          </h5>
+                                          <h5 class="col-sm-4 col-xs-12">
+                                              Output on <b>MOBILE MODEL</b>
+                                              <span> Backpack</span>
+                                              </h5>
+                                              <div class="mini_result" class="col-xs-12">
+                                                  <h4>Result - </h4>
+                                                  <hr>
+                                                  <h4>GOOGLE LENS is more accurate</h4>
+                                              </div>
+                                              <div class="test_image_and_result col-xs-12">
+
+                                                <li class="col-sm-4 col-xs-12">
+                                                    <b>Test Image - </b>
+                                                    <img src="img5.jpeg" class="img-responsive">
+                                                </li>
+                                                <h5 class="col-sm-4 col-xs-12">
+                                                    Output on <b>GOOGLE LENS</b>
+                                                    <span>HP Premium Laptop Backpack </span>
+                                                    </h5>
+                                                    <h5 class="col-sm-4 col-xs-12">
+                                                        Output on <b>MOBILE MODEL</b>
+                                                        <span>Backpack </span>
+                                                        </h5>
+                                                        <div class="mini_result" class="col-xs-12">
+                                                            <h4>Result - </h4>
+                                                            <hr>
+                                                            <h4></h4>
+                                                        </div>
+                                                        <div class="test_image_and_result col-xs-12">
+
+                                                          <li class="col-sm-4 col-xs-12">
+                                                              <b>Test Image - </b>
+                                                              <img src="img6.jpeg" class="img-responsive">
+                                                          </li>
+                                                          <h5 class="col-sm-4 col-xs-12">
+                                                              Output on <b>GOOGLE LENS</b>
+                                                              <span> Acer - Aspire Lite AMD Ryzen 5-5500</span>
+                                                              </h5>
+                                                              <h5 class="col-sm-4 col-xs-12">
+                                                                  Output on <b>MOBILE MODEL</b>
+                                                                  <span> Laptop</span>
+                                                                  </h5>
+                                                                  <div class="mini_result" class="col-xs-12">
+                                                                      <h4>Result - </h4>
+                                                                      <hr>
+                                                                      <h4>GOOGLE LENS is more accurate</h4>
+                                                                  </div>
+                                                                  <div class="test_image_and_result col-xs-12">
+
+                                                                    <li class="col-sm-4 col-xs-12">
+                                                                        <b>Test Image - </b>
+                                                                        <img src="img7.jpeg" class="img-responsive">
+                                                                    </li>
+                                                                    <h5 class="col-sm-4 col-xs-12">
+                                                                        Output on <b>GOOGLE LENS</b>
+                                                                        <span>ESSENTIAL HAND AND BODY LOTION </span>
+                                                                        </h5>
+                                                                        <h5 class="col-sm-4 col-xs-12">
+                                                                            Output on <b>MOBILE MODEL</b>
+                                                                            <span> HAND AND BODY LOTION</span>
+                                                                            </h5>
+                                                                            <div class="mini_result" class="col-xs-12">
+                                                                                <h4>Result - </h4>
+                                                                                <hr>
+                                                                                <h4>GOOGLE LENS is more accurate</h4>
+                                                                            </div>
+                                                                
+                                                      
+                                            
+                                  
+                        
+              
+    
+
+            
+        </h5>
+    </div>
+</ol>
+</center>
+
+<div class="copy_right_footer">
+  Developed by - Hemari Phonglo
+
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
